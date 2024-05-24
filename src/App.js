@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import QRCode from "qrcode.react"; // Import QRCode component
 
 function App() {
   const [countdown, setCountdown] = useState({
@@ -82,7 +83,17 @@ function App() {
           </div>
         </div>
       </div>
-      {/* ... (other HTML content) */}
+
+      <div className="qr-code-container">
+        <p className="text-right">
+          Anybody from SGC or Redeem welcome to contribute!
+        </p>
+        <p className="text-right">Scan this QR code to access the repo</p>
+        <QRCode
+          value="https://github.com/opengovsg/sgc-countdown-timer"
+          size={100}
+        />
+      </div>
     </div>
   );
 }
