@@ -3,6 +3,8 @@
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
+  background-color: #ffcccc; /* Light red background color */
+  color: #cc0000; /* Dark red text color */
 }
 
 .container-fluid {
@@ -13,23 +15,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #333;
+  border: 4px solid #cc0000; /* Thick dark red border */
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px; /* Slightly rounded corners */
+  background-color: #ffe6e6; /* Light red background for the countdown */
 }
 
 .time {
-  margin: 0 10px; /* Add some horizontal margin between the time elements */
+  margin: 0 15px; /* Add some horizontal margin between the time elements */
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.5em; /* Larger font size for the countdown numbers */
   margin: 0;
+  color: #cc0000; /* Dark red color for the numbers */
 }
 
 .mini {
-  font-size: 0.8em;
-  color: #666;
+  font-size: 1em; /* Larger font size for the labels */
+  color: #990000; /* Darker red color for the labels */
 }
 
 .qr-code-container {
@@ -37,6 +41,6 @@ h1 {
   bottom: 20px;
   right: 20px;
   text-align: right;
-  color: #555; /* Example color */
-  font-size: 14px; /* Example font size */
+  color: #cc0000; /* Dark red color for the text */
+  font-size: 16px; /* Slightly larger font size */
 }
