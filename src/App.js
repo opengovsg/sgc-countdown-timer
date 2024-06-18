@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     const newYearTime1 = new Date(
-      `June 18 ${new Date().getFullYear()} 00:00:00`
+      `June 25 ${new Date().getFullYear()} 00:00:00`
     );
     const newYearTime2 = new Date(
       `July 1 ${new Date().getFullYear()} 00:00:00`
@@ -61,9 +61,9 @@ function App() {
           <h1 className="mt-5">SGC Countdown</h1>
         </div>
       </div>
-
-      {counterBox("18 Jun launch day", countdown1)}
+      {counterBox("25 Jun CDC Launch Day", countdown1)}
       {counterBox("1 Jul WOG onboarded", countdown2)}
+
       <div className="qr-code-container">
         <QRCode
           value="https://github.com/opengovsg/sgc-countdown-timer"
