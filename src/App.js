@@ -6,12 +6,12 @@ import QRCode from "qrcode.react"; // Import QRCode component
 import { counterBox } from "./timer";
 
 function App() {
-  const [countdown1, setCountdown1] = useState({
-    days: "00",
-    hours: "00",
-    minutes: "00",
-    seconds: "00",
-  });
+  // const [countdown1, setCountdown1] = useState({
+  //   days: "00",
+  //   hours: "00",
+  //   minutes: "00",
+  //   seconds: "00",
+  // });
 
   const [countdown2, setCountdown2] = useState({
     days: "00",
@@ -21,9 +21,9 @@ function App() {
   });
 
   useEffect(() => {
-    const newYearTime1 = new Date(
-      `June 25 ${new Date().getFullYear()} 00:00:00`
-    );
+    // const newYearTime1 = new Date(
+    //   `June 25 ${new Date().getFullYear()} 00:00:00`
+    // );
     const newYearTime2 = new Date(
       `July 1 ${new Date().getFullYear()} 00:00:00`
     );
@@ -47,7 +47,7 @@ function App() {
       return () => clearInterval(interval);
     };
 
-    updateCountDown(setCountdown1, newYearTime1);
+    // updateCountDown(setCountdown1, newYearTime1);
     updateCountDown(setCountdown2, newYearTime2);
   }, []);
 
@@ -61,7 +61,7 @@ function App() {
           <h1 className="mt-5">SGC Countdown</h1>
         </div>
       </div>
-      {counterBox("25 Jun CDC Launch Day", countdown1)}
+      {/* {counterBox("25 Jun CDC Launch Day", countdown1)} */}
       {counterBox("1 Jul WOG onboarded", countdown2)}
 
       <div className="qr-code-container">
